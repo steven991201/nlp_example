@@ -5,7 +5,6 @@ import torchvision.transforms as transforms
 import torch.nn.functional as F
 import torch.nn as nn
 import matplotlib
-import matplotlib_terminal
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -33,7 +32,6 @@ def imshow(img):
     img = img / 2 + 0.5     # unnormalize
     npimg = img.numpy()
     plt.show(np.transpose(npimg, (1, 2, 0)))
-    plt.show()
 
 
 # 학습용 이미지를 무작위로 가져오기
