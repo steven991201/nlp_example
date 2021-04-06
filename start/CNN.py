@@ -32,6 +32,7 @@ def imshow(img):
     npimg = img.numpy()
     plt.imshow(np.transpose(npimg, (1, 2, 0)))
     plt.show()
+    matplotlib.pyplot.show()
 
 
 # 학습용 이미지를 무작위로 가져오기
